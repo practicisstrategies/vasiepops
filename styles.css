@@ -1267,3 +1267,38 @@ main{ padding-top: 0 !important; }
   font-size: clamp(20px, 2vw, 30px);
 }
 
+/* Testimonials: strip with left/right controls */
+.stripWrap{
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 12px;
+  align-items: center;
+}
+
+.stripBtn{
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid rgba(16,25,87,.18);
+  background: rgba(255,255,255,.70);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 10px 24px rgba(16,25,87,.10);
+}
+
+.stripBtn span{
+  font-size: 28px;
+  line-height: 1;
+  color: var(--ink);
+  transform: translateY(-1px);
+}
+
+.stripBtn:hover{ opacity: .88; }
+
+/* Keep arrows visible but not huge on mobile */
+@media (max-width: 640px){
+  .stripWrap{ grid-template-columns: 40px 1fr 40px; gap: 8px; }
+  .stripBtn{ width: 40px; height: 40px; }
+}
