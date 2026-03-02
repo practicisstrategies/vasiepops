@@ -270,7 +270,7 @@
   <img src="barcelona-vassiepops.jpg" alt="" />
 </div>
 
-<!-- 04 Testimonials (scroll strip) -->
+<!-- 04 Testimonials (scroll strip + arrows) -->
 <section class="band bandAlt" id="testimonials" aria-label="Testimonials">
   <div class="container">
     <div class="bandHead">
@@ -281,51 +281,106 @@
       </div>
     </div>
 
-    <div class="strip" aria-label="Testimonials carousel">
-      <!-- Testimonial 1 -->
-      <article class="shot tCard">
-        <div class="cardBody">
-          <div class="pill">Client</div>
-          <p class="tQuote">
-            “KLEO helped us clarify the narrative, align leadership, and communicate with confidence during a
-            moment of intense scrutiny.”
-          </p>
-          <div class="tMeta">
-            <div class="tName">Name Surname</div>
-            <div class="tRole">Title, Organization</div>
-          </div>
-        </div>
-      </article>
+    <div class="stripWrap" aria-label="Testimonials carousel">
+      <button class="stripBtn" type="button" data-strip-prev aria-label="Previous testimonial">
+        <span aria-hidden="true">‹</span>
+      </button>
 
-      <!-- Testimonial 2 -->
-      <article class="shot tCard">
-        <div class="cardBody">
-          <div class="pill">Executive</div>
-          <p class="tQuote">
-            “Practical, strategic, and incredibly calm under pressure. The training elevated my presence and
-            made our messaging sharper across channels.”
-          </p>
-          <div class="tMeta">
-            <div class="tName">Name Surname</div>
-            <div class="tRole">Executive, Industry</div>
+      <div class="strip" id="tStrip" tabindex="0" aria-roledescription="carousel">
+        <!-- 1 -->
+        <article class="shot tCard">
+          <div class="cardBody">
+            <div class="pill">Client</div>
+            <p class="tQuote">“KLEO helped us clarify the narrative and align leadership under pressure.”</p>
+            <div class="tMeta"><div class="tName">Name Surname</div><div class="tRole">Title, Organization</div></div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <!-- Testimonial 3 -->
-      <article class="shot tCard">
-        <div class="cardBody">
-          <div class="pill">Partner</div>
-          <p class="tQuote">
-            “A rare mix of rigor and taste. KLEO’s guidance translated directly into better decisions and
-            better outcomes.”
-          </p>
-          <div class="tMeta">
-            <div class="tName">Name Surname</div>
-            <div class="tRole">Partner, Firm</div>
+        <!-- 2 -->
+        <article class="shot tCard">
+          <div class="cardBody">
+            <div class="pill">Executive</div>
+            <p class="tQuote">“Practical, strategic, and calm. The coaching made our messaging sharper fast.”</p>
+            <div class="tMeta"><div class="tName">Name Surname</div><div class="tRole">Executive, Industry</div></div>
           </div>
-        </div>
-      </article>
+        </article>
+
+        <!-- 3 -->
+        <article class="shot tCard">
+          <div class="cardBody">
+            <div class="pill">Partner</div>
+            <p class="tQuote">“A rare mix of rigor and taste. The work translated into better decisions.”</p>
+            <div class="tMeta"><div class="tName">Name Surname</div><div class="tRole">Partner, Firm</div></div>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="shot tCard">
+          <div class="cardBody">
+            <div class="pill">Non-profit</div>
+            <p class="tQuote">“KLEO elevated our visibility without compromising our mission or tone.”</p>
+            <div class="tMeta"><div class="tName">Name Surname</div><div class="tRole">Director, Non-profit</div></div>
+          </div>
+        </article>
+
+        <!-- 5 -->
+        <article class="shot tCard">
+          <div class="cardBody">
+            <div class="pill">Regulated</div>
+            <p class="tQuote">“They built a framework our team could actually use—clear, durable, repeatable.”</p>
+            <div class="tMeta"><div class="tName">Name Surname</div><div class="tRole">Comms Lead, Sector</div></div>
+          </div>
+        </article>
+
+        <!-- 6 -->
+        <article class="shot tCard">
+          <div class="cardBody">
+            <div class="pill">Founder</div>
+            <p class="tQuote">“The positioning work made our story coherent and credible across audiences.”</p>
+            <div class="tMeta"><div class="tName">Name Surname</div><div class="tRole">Founder, Company</div></div>
+          </div>
+        </article>
+
+        <!-- 7 -->
+        <article class="shot tCard">
+          <div class="cardBody">
+            <div class="pill">Training</div>
+            <p class="tQuote">“The simulation was intense—in the best way. We’re genuinely prepared now.”</p>
+            <div class="tMeta"><div class="tName">Name Surname</div><div class="tRole">VP, Organization</div></div>
+          </div>
+        </article>
+
+        <!-- 8 -->
+        <article class="shot tCard">
+          <div class="cardBody">
+            <div class="pill">Board</div>
+            <p class="tQuote">“They brought clarity to sensitive decisions and kept everyone aligned.”</p>
+            <div class="tMeta"><div class="tName">Name Surname</div><div class="tRole">Board Member</div></div>
+          </div>
+        </article>
+
+        <!-- 9 -->
+        <article class="shot tCard">
+          <div class="cardBody">
+            <div class="pill">Comms</div>
+            <p class="tQuote">“A smart partner who improves the work and makes the team better.”</p>
+            <div class="tMeta"><div class="tName">Name Surname</div><div class="tRole">Head of Comms</div></div>
+          </div>
+        </article>
+
+        <!-- 10 -->
+        <article class="shot tCard">
+          <div class="cardBody">
+            <div class="pill">Strategy</div>
+            <p class="tQuote">“Strong counsel, fast execution, and excellent judgment in high-stakes moments.”</p>
+            <div class="tMeta"><div class="tName">Name Surname</div><div class="tRole">Advisor, Firm</div></div>
+          </div>
+        </article>
+      </div>
+
+      <button class="stripBtn" type="button" data-strip-next aria-label="Next testimonial">
+        <span aria-hidden="true">›</span>
+      </button>
     </div>
   </div>
 </section>
@@ -410,16 +465,35 @@
       </section>
     </main>
 
-    <footer class="siteFooter">
-      <div class="container footerRow">
-        <div>© <span id="year"></span> KLEO L.L.C. All rights reserved.</div>
-        <div class="footerLinks">
-          <a href="#">Privacy</a>
-          <a href="#">Terms</a>
-          <a href="#">DE&amp;I</a>
-        </div>
+<footer class="siteFooter">
+  <div class="container footerGrid">
+    <!-- Left -->
+    <div class="footerLeft">
+      <div>© <span id="year"></span> KLEO L.L.C. All rights reserved.</div>
+
+      <div class="footerLinks">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">DE&amp;I</a>
       </div>
-    </footer>
+    </div>
+
+    <!-- Right: Newsletter -->
+    <div class="footerNewsletter" aria-label="Newsletter signup">
+      <div class="footerNewsletterHead">
+        <div class="pill">Newsletter</div>
+        <p>Occasional notes on strategy, reputation, and leadership communications.</p>
+      </div>
+
+      <!-- Paste your Mailchimp embed form RIGHT HERE -->
+      <div class="newsletterEmbed">
+        <!-- MAILCHIMP EMBED START -->
+        <div>&nbsp;</div>>
+        <!-- MAILCHIMP EMBED END -->
+      </div>
+    </div>
+  </div>
+</footer>
 
     <script src="script.js"></script>
   </body>
